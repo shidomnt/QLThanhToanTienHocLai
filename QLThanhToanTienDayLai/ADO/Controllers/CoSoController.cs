@@ -24,7 +24,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                     INSERT INTO CoSo
                     (Ma, Ten, DiaChi, LienHe, GhiChu)
                     VALUES(@Ma,@Ten,@DiaChi,@LienHe,@GhiChu)";
-            FillParameters(sql, coSo, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, coSo, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 
@@ -37,7 +38,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                 [GhiChu] = @GhiChu 
                 WHERE (([Ma] = @Ma))
             ";
-            FillParameters(sql, coSo, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, coSo, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 
@@ -47,7 +49,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                 DELETE FROM CoSo
                 WHERE Ma = @Ma
             ";
-            FillParameters(sql, coSo, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, coSo, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 

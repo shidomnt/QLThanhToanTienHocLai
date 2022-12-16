@@ -45,7 +45,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                 string.Join(",", properties.ToArray()),
                 string.Join(",", propertiesWithPreFix.ToArray())
                 );
-            FillParameters(sql, entity, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, entity, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 
@@ -70,7 +71,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                 .Select(property => string.Format("{0} = {1}", property, '@' + property))),
                 string.Format("{0} = {1}", properties[0], propertiesWithPreFix[0])
                 );
-            FillParameters(sql, entity, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, entity, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 
@@ -89,7 +91,8 @@ namespace QLThanhToanTienDayLai.ADO.Controllers
                 entity.GetType().Name,
                 string.Format("{0} = {1}", properties[0], propertiesWithPreFix[0])
                 );
-            FillParameters(sql, entity, out SqlCommand command);
+            SqlCommand command;
+            FillParameters(sql, entity, out command);
             Db.FromSqlCommand(command, (err, reader) => { });
         }
 

@@ -13,10 +13,9 @@ E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLTh
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.pdb
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\QLThanhToanTienDayLai.exe
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\QLThanhToanTienDayLai.pdb
-E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.AssemblyReference.cache
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormCoSo.resources
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormMDI.resources
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.Properties.Resources.resources
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.GenerateResource.cache
-E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.CoreCompileInputs.cache
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormKhoa.resources
+E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csprojResolveAssemblyReference.cache

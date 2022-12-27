@@ -32,25 +32,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.TextBox_Ma = new System.Windows.Forms.TextBox();
             this.TextBox_Ten = new System.Windows.Forms.TextBox();
-            this.TextBox_LienHe = new System.Windows.Forms.TextBox();
-            this.TextBox_GhiChu = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Btn_Them = new System.Windows.Forms.Button();
             this.Btn_Sua = new System.Windows.Forms.Button();
             this.Btn_Xoa = new System.Windows.Forms.Button();
             this.Btn_Thoat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TextBox_MaCoSo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LienHe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaCoSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TextBox_LienHe = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TextBox_GhiChu = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TextBox_MaCoSo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -130,30 +130,6 @@
             this.label3.Text = "Tên:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(4, 110);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 35);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Liên Hệ:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(4, 145);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 35);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Ghi Chú:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // TextBox_Ma
             // 
             this.TextBox_Ma.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -173,22 +149,6 @@
             this.TextBox_Ten.Size = new System.Drawing.Size(535, 27);
             this.TextBox_Ten.TabIndex = 1;
             // 
-            // TextBox_LienHe
-            // 
-            this.TextBox_LienHe.Location = new System.Drawing.Point(159, 114);
-            this.TextBox_LienHe.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox_LienHe.Name = "TextBox_LienHe";
-            this.TextBox_LienHe.Size = new System.Drawing.Size(535, 27);
-            this.TextBox_LienHe.TabIndex = 3;
-            // 
-            // TextBox_GhiChu
-            // 
-            this.TextBox_GhiChu.Location = new System.Drawing.Point(159, 149);
-            this.TextBox_GhiChu.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox_GhiChu.Name = "TextBox_GhiChu";
-            this.TextBox_GhiChu.Size = new System.Drawing.Size(535, 27);
-            this.TextBox_GhiChu.TabIndex = 4;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 4;
@@ -206,7 +166,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(535, 49);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
@@ -278,26 +238,6 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // TextBox_MaCoSo
-            // 
-            this.TextBox_MaCoSo.Location = new System.Drawing.Point(159, 184);
-            this.TextBox_MaCoSo.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox_MaCoSo.Name = "TextBox_MaCoSo";
-            this.TextBox_MaCoSo.Size = new System.Drawing.Size(535, 27);
-            this.TextBox_MaCoSo.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(4, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 34);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Mã Cơ Sở";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Ma
             // 
             this.Ma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -338,6 +278,66 @@
             this.GhiChu.HeaderText = "Ghi Chú";
             this.GhiChu.Name = "GhiChu";
             this.GhiChu.ReadOnly = true;
+            // 
+            // TextBox_LienHe
+            // 
+            this.TextBox_LienHe.Location = new System.Drawing.Point(159, 114);
+            this.TextBox_LienHe.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_LienHe.Name = "TextBox_LienHe";
+            this.TextBox_LienHe.Size = new System.Drawing.Size(535, 27);
+            this.TextBox_LienHe.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(4, 110);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 35);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Liên Hệ:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TextBox_GhiChu
+            // 
+            this.TextBox_GhiChu.Location = new System.Drawing.Point(159, 149);
+            this.TextBox_GhiChu.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_GhiChu.Name = "TextBox_GhiChu";
+            this.TextBox_GhiChu.Size = new System.Drawing.Size(535, 27);
+            this.TextBox_GhiChu.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(4, 145);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 35);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Ghi Chú:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TextBox_MaCoSo
+            // 
+            this.TextBox_MaCoSo.Location = new System.Drawing.Point(159, 184);
+            this.TextBox_MaCoSo.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_MaCoSo.Name = "TextBox_MaCoSo";
+            this.TextBox_MaCoSo.Size = new System.Drawing.Size(535, 27);
+            this.TextBox_MaCoSo.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(4, 180);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 34);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Mã Cơ Sở";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormKhoa
             // 

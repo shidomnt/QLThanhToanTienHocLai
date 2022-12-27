@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QLThanhToanTienDayLai.Attributes;
 
 namespace QLThanhToanTienDayLai.ADO.Models
 {
-    class CoSo
+    public class CoSo : Model
     {
         public string Ma { get; set; }
 

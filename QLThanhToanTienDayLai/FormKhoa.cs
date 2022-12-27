@@ -1,13 +1,7 @@
 ﻿using QLThanhToanTienDayLai.ADO.Controllers;
 using QLThanhToanTienDayLai.ADO.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QLThanhToanTienDayLai
@@ -17,12 +11,12 @@ namespace QLThanhToanTienDayLai
         public FormKhoa()
         {
             InitializeComponent();
-            Controller = new Controller<Khoa>(new Khoa());
+            Controller = new KhoaController();
         }
 
         private Khoa _selectedKhoa = null;
 
-        private Controller<Khoa> Controller { get; set; }
+        private KhoaController Controller { get; set; }
 
         public DataTable DataTableKhoa { get; set; }
 
@@ -49,6 +43,11 @@ namespace QLThanhToanTienDayLai
         private void Btn_Sua_Click(object sender, EventArgs e)
         {
             var Khoa = MakeKhoaFromInput();
+            if (SelectedKhoa == null)
+            {
+                MessageBox.Show("Chọn một khoa để sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Controller.Update(Khoa);
             FeedDataGridView();
         }
@@ -57,7 +56,7 @@ namespace QLThanhToanTienDayLai
         {
             if (SelectedKhoa == null)
             {
-                MessageBox.Show("Chọn một cơ sở để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chọn một khoa để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             Controller.Delete(SelectedKhoa);

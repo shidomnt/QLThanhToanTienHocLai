@@ -10,7 +10,7 @@ namespace QLThanhToanTienDayLai
     {
         private CoSo _selectedCoSo = null;
 
-        private Controller<CoSo> Controller { get; set; }
+        private CoSoController Controller { get; set; }
 
         public DataTable DataTableCoSo { get; set; }
 
@@ -29,7 +29,7 @@ namespace QLThanhToanTienDayLai
         public FormCoSo()
         {
             InitializeComponent();
-            Controller = new Controller<CoSo>(new CoSo());
+            Controller = new CoSoController();
         }
 
         private void Btn_Them_Click(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace QLThanhToanTienDayLai
         private void Btn_Sua_Click(object sender, EventArgs e)
         {
             var coSo = MakeCoSoFromInput();
+            if (SelectedCoSo == null)
+            {
+                MessageBox.Show("Chọn một cơ sở để sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Controller.Update(coSo);
             FeedDataGridView();
         }

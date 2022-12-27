@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace QLThanhToanTienDayLai.ADO.Models
 {
 
-    public partial class Khoa
+    public partial class Khoa : Model
     {
         public string Ma { get; set; }
 

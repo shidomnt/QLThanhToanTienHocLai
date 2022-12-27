@@ -13,7 +13,9 @@ namespace QLThanhToanTienDayLai.ADO
     {
         private static Database DatabaseInstance { get; set; }
 
-        public SqlConnection Connection { get; set; }
+        SqlConnection _connection;
+
+        public SqlConnection Connection { get { return _connection; } }
 
         private Database()
         {
@@ -21,7 +23,8 @@ namespace QLThanhToanTienDayLai.ADO
                 .ConnectionStrings["SqlServer"]
                 .ConnectionString;
             var connection = new SqlConnection(connectionString);
-            Connection = connection;
+            _connection = connection;
+
         }
 
         public static Database GetDatabase() {
@@ -35,23 +38,23 @@ namespace QLThanhToanTienDayLai.ADO
         {
             try
             {
-                Connection.Open();
+              Connection.Open();
 
-                var reader = cmd.ExecuteReader();
+              var reader = cmd.ExecuteReader();
 
-                callback(null, reader);
+              callback(null, reader);
 
-                MessageBox.Show("Dữ liệu được cập nhật vào Database", "Thông báo", MessageBoxButtons.OK);
+              MessageBox.Show("Dữ liệu được cập nhật vào Database", "Thông báo", MessageBoxButtons.OK);
             }
-            catch (Exception ex) { 
-                callback(ex, null);
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex)
+            {
+              callback(ex, null);
+              MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                Connection.Close();
+              Connection.Close();
             }
         }
-
     }
 }

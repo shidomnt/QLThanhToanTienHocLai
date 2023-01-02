@@ -49,8 +49,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.TextBox_GhiChu = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TextBox_MaCoSo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.ComboBox_MaCoSo = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -73,8 +73,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.TextBox_GhiChu, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.TextBox_MaCoSo, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBox_MaCoSo, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -319,14 +319,6 @@
             this.label6.Text = "Ghi Chú:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // TextBox_MaCoSo
-            // 
-            this.TextBox_MaCoSo.Location = new System.Drawing.Point(159, 184);
-            this.TextBox_MaCoSo.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBox_MaCoSo.Name = "TextBox_MaCoSo";
-            this.TextBox_MaCoSo.Size = new System.Drawing.Size(535, 27);
-            this.TextBox_MaCoSo.TabIndex = 2;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -338,6 +330,15 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Mã Cơ Sở";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ComboBox_MaCoSo
+            // 
+            this.ComboBox_MaCoSo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBox_MaCoSo.FormattingEnabled = true;
+            this.ComboBox_MaCoSo.Location = new System.Drawing.Point(158, 183);
+            this.ComboBox_MaCoSo.Name = "ComboBox_MaCoSo";
+            this.ComboBox_MaCoSo.Size = new System.Drawing.Size(537, 27);
+            this.ComboBox_MaCoSo.TabIndex = 12;
             // 
             // FormKhoa
             // 
@@ -376,12 +377,12 @@
         private System.Windows.Forms.Button Btn_Xoa;
         private System.Windows.Forms.Button Btn_Thoat;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox TextBox_MaCoSo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
         private System.Windows.Forms.DataGridViewTextBoxColumn LienHe;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCoSo;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.ComboBox ComboBox_MaCoSo;
     }
 }

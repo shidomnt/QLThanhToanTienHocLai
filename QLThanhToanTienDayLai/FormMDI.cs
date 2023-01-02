@@ -19,9 +19,16 @@ namespace QLThanhToanTienDayLai
 
         private void khoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form_CoSo = new FormKhoa();
-            form_CoSo.MdiParent = this;
-            form_CoSo.Show();
+            var form_Khoa = new FormKhoa();
+            form_Khoa.MdiParent = this;
+            form_Khoa.Show();
+        }
+
+        private void khóaHọcToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            var form_KhoaHoc = new FormKhoaHoc();
+            form_KhoaHoc.MdiParent = this;
+            form_KhoaHoc.Show();
         }
     }
 }

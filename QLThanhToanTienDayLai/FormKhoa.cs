@@ -3,6 +3,8 @@ using QLThanhToanTienDayLai.ADO.Models;
 using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace QLThanhToanTienDayLai
 {
@@ -11,12 +13,19 @@ namespace QLThanhToanTienDayLai
         public FormKhoa()
         {
             InitializeComponent();
-            Controller = new KhoaController();
+            KhoaController = new KhoaController();
+            CoSoController = new CoSoController();
         }
 
         private Khoa _selectedKhoa = null;
 
-        private KhoaController Controller { get; set; }
+        private KhoaController KhoaController { get; set; }
+
+        private CoSoController CoSoController
+        {
+            get;
+            set;
+        }
 
         public DataTable DataTableKhoa { get; set; }
 
@@ -33,10 +42,19 @@ namespace QLThanhToanTienDayLai
             }
         }
 
+        private void FormKhoa_Load (object sender, EventArgs e)
+        {
+            var listCoSo = CoSoController.GetAll().ToList();
+            ComboBox_MaCoSo.DataSource = listCoSo;
+            ComboBox_MaCoSo.DisplayMember = "Ten";
+            ComboBox_MaCoSo.ValueMember = "Ma";
+            FeedDataGridView();
+        }
+
         private void Btn_Them_Click(object sender, EventArgs e)
         {
             var Khoa = MakeKhoaFromInput();
-            Controller.Add(Khoa);
+            KhoaController.Add(Khoa);
             FeedDataGridView();
         }
 
@@ -48,7 +66,7 @@ namespace QLThanhToanTienDayLai
                 MessageBox.Show("Chọn một khoa để sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            Controller.Update(Khoa);
+            KhoaController.Update(Khoa);
             FeedDataGridView();
         }
 
@@ -59,12 +77,7 @@ namespace QLThanhToanTienDayLai
                 MessageBox.Show("Chọn một khoa để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            Controller.Delete(SelectedKhoa);
-            FeedDataGridView();
-        }
-
-        private void FormKhoa_Load(object sender, EventArgs e)
-        {
+            KhoaController.Delete(SelectedKhoa);
             FeedDataGridView();
         }
 
@@ -96,7 +109,7 @@ namespace QLThanhToanTienDayLai
             {
                 TextBox_Ma.Text = SelectedKhoa.Ma;
                 TextBox_Ten.Text = SelectedKhoa.Ten;
-                TextBox_MaCoSo.Text = SelectedKhoa.MaCoSo;
+                ComboBox_MaCoSo.SelectedValue = SelectedKhoa.MaCoSo;
                 TextBox_LienHe.Text = SelectedKhoa.LienHe;
                 TextBox_GhiChu.Text = SelectedKhoa.GhiChu;
             }
@@ -108,7 +121,7 @@ namespace QLThanhToanTienDayLai
             {
                 Ma = TextBox_Ma.Text,
                 Ten = TextBox_Ten.Text,
-                MaCoSo = TextBox_MaCoSo.Text,
+                MaCoSo = ComboBox_MaCoSo.SelectedValue.ToString(),
                 LienHe = TextBox_LienHe.Text,
                 GhiChu = TextBox_GhiChu.Text,
             };
@@ -117,7 +130,7 @@ namespace QLThanhToanTienDayLai
 
         private void FeedDataGridView()
         {
-            DataTableKhoa = Controller.GetDataTable();
+            DataTableKhoa = KhoaController.GetDataTable();
             dataGridView1.DataSource = DataTableKhoa;
         }
 

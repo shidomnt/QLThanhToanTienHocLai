@@ -32,3 +32,4 @@ E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\De
 E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormMDI.resources
 E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.Properties.Resources.resources
 E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.GenerateResource.Cache
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormKhoaHoc.resources

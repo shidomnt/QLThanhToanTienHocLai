@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ADO\Controllers\KhoaController.cs" />
     <Compile Include="ADO\Controllers\CoSoController.cs" />
+    <Compile Include="ADO\Controllers\KhoaHocController.cs" />
     <Compile Include="ADO\Models\ChuyenVien.cs" />
     <Compile Include="ADO\Models\CoSo.cs" />
     <Compile Include="ADO\Models\DonGia.cs" />
@@ -78,6 +80,12 @@
     <Compile Include="FormCoSo.Designer.cs">
       <DependentUpon>FormCoSo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhoaHoc.Designer.cs">
+      <DependentUpon>FormKhoaHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormKhoa.resx">
       <DependentUpon>FormKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhoaHoc.resx">
+      <DependentUpon>FormKhoaHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMDI.resx">
       <DependentUpon>FormMDI.cs</DependentUpon>

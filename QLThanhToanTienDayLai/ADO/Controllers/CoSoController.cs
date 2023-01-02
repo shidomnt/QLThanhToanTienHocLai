@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using QLThanhToanTienDayLai.ADO.Models;
 using System.Data;
 using System.Data.SqlClient;
+using DBLib;
 
 namespace QLThanhToanTienDayLai.ADO.Controllers
 {

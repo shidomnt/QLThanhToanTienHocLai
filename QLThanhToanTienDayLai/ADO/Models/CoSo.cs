@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using QLThanhToanTienDayLai.Attributes;
+using DBLib;
+using DBLib.Attributes;
+
 
 namespace QLThanhToanTienDayLai.ADO.Models
 {

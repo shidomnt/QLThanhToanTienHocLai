@@ -19,3 +19,16 @@ E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLTh
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.GenerateResource.cache
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormKhoa.resources
 E:\Study\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csprojResolveAssemblyReference.cache
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\QLThanhToanTienDayLai.exe.config
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.exe
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.pdb
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\QLThanhToanTienDayLai.exe
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\QLThanhToanTienDayLai.pdb
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\DBLib.dll
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\bin\Debug\DBLib.pdb
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csprojResolveAssemblyReference.cache
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormCoSo.resources
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormKhoa.resources
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.FormMDI.resources
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\QLThanhToanTienDayLai.Properties.Resources.resources
+E:\Study\C_Sharp\source\repos\QLThanhToanTienDayLai\QLThanhToanTienDayLai\obj\Debug\UDPM1K12_CD200429_TranQuangHa.csproj.GenerateResource.Cache

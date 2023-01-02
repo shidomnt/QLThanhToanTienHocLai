@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using DBLib;
+using DBLib.Attributes;
 namespace QLThanhToanTienDayLai.ADO.Models
 {
 

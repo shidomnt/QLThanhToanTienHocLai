@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using DBLib;
+using DBLib.Attributes;
 namespace QLThanhToanTienDayLai.ADO.Models
 { 
 
-    public partial class MonHoc
+    public partial class MonHoc : Model
     {
         
         public string Ma { get; set; }

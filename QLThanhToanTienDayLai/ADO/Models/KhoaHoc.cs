@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using DBLib;
+using DBLib.Attributes;
 namespace QLThanhToanTienDayLai.ADO.Models
 {
 
-    public partial class KhoaHoc
+    public partial class KhoaHoc : Model
     {
         public string Ma { get; set; }
 

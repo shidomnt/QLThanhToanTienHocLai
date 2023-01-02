@@ -1,9 +1,10 @@
 ﻿using System;
-
+using DBLib;
+using DBLib.Attributes;
 namespace QLThanhToanTienDayLai.ADO.Models
 {
 
-    public partial class ThanhToan
+    public partial class ThanhToan : Model
     {
         public string Ma { get; set; }
 

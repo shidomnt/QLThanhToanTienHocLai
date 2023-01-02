@@ -45,9 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADO\Controllers\Controller.cs" />
     <Compile Include="ADO\Controllers\KhoaController.cs" />
-    <Compile Include="ADO\Database.cs" />
     <Compile Include="ADO\Controllers\CoSoController.cs" />
     <Compile Include="ADO\Models\ChuyenVien.cs" />
     <Compile Include="ADO\Models\CoSo.cs" />
@@ -56,13 +54,12 @@
     <Compile Include="ADO\Models\Khoa.cs" />
     <Compile Include="ADO\Models\KhoaHoc.cs" />
     <Compile Include="ADO\Models\KyHoc.cs" />
-    <Compile Include="ADO\Models\Model.cs" />
     <Compile Include="ADO\Models\MonHoc.cs" />
     <Compile Include="ADO\Models\Nganh.cs" />
     <Compile Include="ADO\Models\ThanhToan.cs" />
-    <Compile Include="Attributes\ColumnAttribute.cs" />
     <Compile Include="DataSet.cs">
       <DependentUpon>DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -131,7 +128,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DbLib\DBLib.csproj">
+      <Project>{b3f5a48f-9726-4f3d-8447-5cd80a32e342}</Project>
+      <Name>DBLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
